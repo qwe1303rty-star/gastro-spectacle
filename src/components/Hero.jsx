@@ -1,4 +1,4 @@
-import { motion, useScroll, useTransform } from 'framer-motion'
+﻿import { motion, useScroll, useTransform } from 'framer-motion'
 import { useRef } from 'react'
 
 export default function Hero() {
@@ -9,11 +9,11 @@ export default function Hero() {
   const scale = useTransform(scrollYProgress, [0, 1], [1, 1.08])
 
   return (
-    <section id="top" ref={ref} className="relative h-screen w-full overflow-hidden grain">
+    <section id="top" ref={ref} className="relative h-screen w-full overflow-hidden">
       <motion.div style={{ scale }} className="absolute inset-0">
-        <img src="/images/hero.jpg" alt="" className="w-full h-full object-cover" draggable={false} />
-        <div className="absolute inset-0 bg-gradient-to-b from-ink/80 via-ink/40 to-ink" />
-        <div className="absolute inset-0 bg-gradient-to-r from-ink/70 via-transparent to-ink/60" />
+        <video autoPlay muted loop playsInline className="w-full h-full object-cover" draggable={false}>
+          <source src="/videos/hero.mp4" type="video/mp4" />
+        </video>
       </motion.div>
 
       <motion.div
@@ -104,6 +104,8 @@ export default function Hero() {
           <div><div className="text-pearl/30 mb-1">03</div><div>Планы</div></div>
         </div>
       </div>
+
+      <div className="absolute bottom-0 left-0 right-0 h-40 bg-gradient-to-b from-transparent to-ink pointer-events-none z-10" />
     </section>
   )
 }

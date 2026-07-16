@@ -118,7 +118,8 @@ export default function Chef() {
               transition={{ duration: 1.1, ease: [0.22, 1, 0.36, 1] }}
               className='font-display text-[clamp(2rem,4.2vw,3.75rem)] leading-[1.05] font-light text-pearl mb-8'
             >
-              От высокой кухни — к вашему офису.
+              От высокой кухни —{' '}
+              <span className='italic gold-text'>к вашему офису.</span>
             </motion.h2>
 
             <motion.p
@@ -158,4 +159,3 @@ export default function Chef() {
     </section>
   )
 }
-

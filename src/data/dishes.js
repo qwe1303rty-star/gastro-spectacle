@@ -5,15 +5,48 @@
 const poster = '/images/dish-frame.jpg'
 const video = '/videos/dish.mp4'
 
-const bobPoster = '/images/bob-poster.jpg'
-const bobVideo = '/videos/bob.mp4'
-
 const darginskijPoster = '/images/darginskij-hinkal.png'
 const avarskijPoster = '/images/avarskij-hinkal.png'
 const zhizhiPoster = '/images/zhizhi-galnash.png'
 
-const brutalnyjPoster = '/images/brutalnyj-poster.jpg'
+const girosPoster = '/images/giros-poster.png'
+const burgerPoster = '/images/burger-poster.png'
+const sendvichPoster = '/images/sendvich-poster.png'
+
+const atlantidaPoster = '/images/atlantida-poster.png'
+const bobPoster = '/images/bob-poster.png'
+const brutalnyjPoster = '/images/brutalnyj-poster.png'
 const brutalnyjVideo = '/videos/brutalnyj.mp4'
+const buchoPoster = '/images/bucho-poster.png'
+const vdokhnoveniePoster = '/images/vdokhnovenie-poster.png'
+const vesennijPoster = '/images/vesennij-poster.png'
+const vinegretPoster = '/images/vinegret-poster.png'
+const vinegretGulliverPoster = '/images/vinegret-gulliver-poster.png'
+const vitaminnyjPoster = '/images/vitaminnyj-poster.png'
+const derevenskijPoster = '/images/derevenskij-poster.png'
+const kleopatraPoster = '/images/kleopatra-poster.png'
+const koulSloPoster = '/images/koul-slo-poster.png'
+const lesnojPoster = '/images/lesnoj-poster.png'
+const malahitPoster = '/images/malahit-poster.png'
+const morkovKorejskayaPoster = '/images/morkov-korejskaya-poster.png'
+const ovoshhnojSalatPoster = '/images/ovoshhnoj-salat-poster.png'
+const redkaKabardinskijPoster = '/images/redka-kabardinskij-poster.png'
+const svekolnyjPoster = '/images/svekolnyj-poster.png'
+const stolichnyjPoster = '/images/stolichnyj-poster.png'
+const tashkentPoster = '/images/tashkent-poster.png'
+
+// Супы
+const borshchPoster = '/images/borshch-poster.png'
+const gorohovyjPoster = '/images/gorohovyj-poster.png'
+const lapshaGribnayaPoster = '/images/lapsha-gribnaya-poster.png'
+const solyankaMyasnayaPoster = '/images/solyanka-myasnaya-poster.png'
+const okroshkaPoster = '/images/okroshka-poster.png'
+const rassolnikPoster = '/images/rassolnik-poster.png'
+const svekolnikPoster = '/images/svekolnik-poster.png'
+const ukhaPoster = '/images/ukha-poster.png'
+const kharchoPoster = '/images/kharcho-poster.png'
+const shhiZelenyePoster = '/images/shhi-zelenye-poster.png'
+const shhiKvashennyePoster = '/images/shhi-kvashennye-poster.png'
 
 export const categories = [
   'Все',
@@ -37,7 +70,7 @@ export const dishes = [
     price: null,
     description: null,
     options: null,
-    poster, video,
+    poster: atlantidaPoster, video,
   },
   {
     id: 'bob',
@@ -48,7 +81,7 @@ export const dishes = [
     price: null,
     description: null,
     options: null,
-    poster: bobPoster, video: bobVideo,
+    poster: bobPoster, video,
   },
   {
     id: 'brutalnyj',
@@ -70,7 +103,7 @@ export const dishes = [
     price: null,
     description: null,
     options: null,
-    poster, video,
+    poster: buchoPoster, video,
   },
   {
     id: 'vdokhnovenie',
@@ -81,7 +114,7 @@ export const dishes = [
     price: null,
     description: null,
     options: null,
-    poster, video,
+    poster: vdokhnoveniePoster, video,
   },
   {
     id: 'vesennij',
@@ -92,7 +125,7 @@ export const dishes = [
     price: null,
     description: null,
     options: null,
-    poster, video,
+    poster: vesennijPoster, video,
   },
   {
     id: 'vinegret',
@@ -103,7 +136,7 @@ export const dishes = [
     price: null,
     description: null,
     options: null,
-    poster, video,
+    poster: vinegretPoster, video,
   },
   {
     id: 'vinegret-gulliver',
@@ -114,7 +147,7 @@ export const dishes = [
     price: null,
     description: null,
     options: null,
-    poster, video,
+    poster: vinegretGulliverPoster, video,
   },
   {
     id: 'vitaminnyj',
@@ -125,7 +158,7 @@ export const dishes = [
     price: null,
     description: null,
     options: null,
-    poster, video,
+    poster: vitaminnyjPoster, video,
   },
   {
     id: 'derevenskij',
@@ -136,7 +169,7 @@ export const dishes = [
     price: null,
     description: null,
     options: null,
-    poster, video,
+    poster: derevenskijPoster, video,
   },
   {
     id: 'kleopatra',
@@ -147,7 +180,7 @@ export const dishes = [
     price: null,
     description: null,
     options: null,
-    poster, video,
+    poster: kleopatraPoster, video,
   },
   {
     id: 'koul-slo',
@@ -158,7 +191,7 @@ export const dishes = [
     price: null,
     description: null,
     options: null,
-    poster, video,
+    poster: koulSloPoster, video,
   },
   {
     id: 'lesnoj',
@@ -169,7 +202,7 @@ export const dishes = [
     price: null,
     description: null,
     options: null,
-    poster, video,
+    poster: lesnojPoster, video,
   },
   {
     id: 'malahit',
@@ -180,7 +213,7 @@ export const dishes = [
     price: null,
     description: null,
     options: null,
-    poster, video,
+    poster: malahitPoster, video,
   },
   {
     id: 'morkov-korejskaya-s-gribami',
@@ -191,7 +224,7 @@ export const dishes = [
     price: null,
     description: null,
     options: null,
-    poster, video,
+    poster: morkovKorejskayaPoster, video,
   },
   {
     id: 'ovoshhnoj-salat',
@@ -202,7 +235,7 @@ export const dishes = [
     price: null,
     description: null,
     options: null,
-    poster, video,
+    poster: ovoshhnojSalatPoster, video,
   },
   {
     id: 'redka-kabardinskij',
@@ -213,7 +246,7 @@ export const dishes = [
     price: null,
     description: null,
     options: null,
-    poster, video,
+    poster: redkaKabardinskijPoster, video,
   },
   {
     id: 'svekolnyj-salat',
@@ -224,7 +257,7 @@ export const dishes = [
     price: null,
     description: null,
     options: null,
-    poster, video,
+    poster: svekolnyjPoster, video,
   },
   {
     id: 'stolichnyj',
@@ -235,7 +268,7 @@ export const dishes = [
     price: null,
     description: null,
     options: null,
-    poster, video,
+    poster: stolichnyjPoster, video,
   },
   {
     id: 'tashkent',
@@ -246,7 +279,7 @@ export const dishes = [
     price: null,
     description: null,
     options: null,
-    poster, video,
+    poster: tashkentPoster, video,
   },
 
   // ─── Супы ─────────────────────────────────────────────
@@ -259,7 +292,7 @@ export const dishes = [
     price: null,
     description: null,
     options: null,
-    poster, video,
+    poster: borshchPoster, video,
   },
   {
     id: 'gorohovyj',
@@ -270,7 +303,7 @@ export const dishes = [
     price: null,
     description: null,
     options: null,
-    poster, video,
+    poster: gorohovyjPoster, video,
   },
   {
     id: 'lapsha-gribnaya',
@@ -281,7 +314,7 @@ export const dishes = [
     price: null,
     description: null,
     options: null,
-    poster, video,
+    poster: lapshaGribnayaPoster, video,
   },
   {
     id: 'solyanka-myasnaya',
@@ -292,7 +325,7 @@ export const dishes = [
     price: null,
     description: null,
     options: null,
-    poster, video,
+    poster: solyankaMyasnayaPoster, video,
   },
   {
     id: 'okroshka',
@@ -303,7 +336,7 @@ export const dishes = [
     price: null,
     description: null,
     options: null,
-    poster, video,
+    poster: okroshkaPoster, video,
   },
   {
     id: 'rassolnik',
@@ -314,7 +347,7 @@ export const dishes = [
     price: null,
     description: null,
     options: null,
-    poster, video,
+    poster: rassolnikPoster, video,
   },
   {
     id: 'svekolnik',
@@ -325,7 +358,7 @@ export const dishes = [
     price: null,
     description: null,
     options: null,
-    poster, video,
+    poster: svekolnikPoster, video,
   },
   {
     id: 'ukha',
@@ -336,7 +369,7 @@ export const dishes = [
     price: null,
     description: null,
     options: null,
-    poster, video,
+    poster: ukhaPoster, video,
   },
   {
     id: 'kharcho',
@@ -347,7 +380,7 @@ export const dishes = [
     price: null,
     description: null,
     options: null,
-    poster, video,
+    poster: kharchoPoster, video,
   },
   {
     id: 'shhi-zelenye',
@@ -358,7 +391,7 @@ export const dishes = [
     price: null,
     description: null,
     options: null,
-    poster, video,
+    poster: shhiZelenyePoster, video,
   },
   {
     id: 'shhi-kvashennye',
@@ -369,7 +402,7 @@ export const dishes = [
     price: null,
     description: null,
     options: null,
-    poster, video,
+    poster: shhiKvashennyePoster, video,
   },
   {
     id: 'solyanka-kapusta',
@@ -670,7 +703,8 @@ export const dishes = [
     price: null,
     description: null,
     options: null,
-    poster, video,
+    poster: girosPoster, video,
+    softEdge: true,
   },
   {
     id: 'burger',
@@ -681,7 +715,8 @@ export const dishes = [
     price: null,
     description: null,
     options: null,
-    poster, video,
+    poster: burgerPoster, video,
+    softEdge: true,
   },
   {
     id: 'sendvich',
@@ -692,7 +727,8 @@ export const dishes = [
     price: null,
     description: null,
     options: null,
-    poster, video,
+    poster: sendvichPoster, video,
+    softEdge: true,
   },
 
   // ─── Десерты ─────────────────────────────────────────────
