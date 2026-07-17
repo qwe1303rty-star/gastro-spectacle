@@ -43,11 +43,7 @@ export default function DishCard({ dish, index, onClick }) {
           <h3 className="font-display text-[20px] md:text-[24px] leading-tight text-pearl font-light">
             {dish.name}
           </h3>
-          {dish.price ? (
-            <span className="text-[14px] text-gold font-light shrink-0 ml-3">
-              {dish.price} ₽
-            </span>
-          ) : dish.weight ? (
+          {dish.weight ? (
             <span className="text-[11px] tracking-luxe uppercase text-pearl/45 font-light shrink-0 ml-3">
               {dish.weight}
             </span>

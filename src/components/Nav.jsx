@@ -5,7 +5,7 @@ const links = [
   { href: '#menu', label: 'Меню' },
   { href: '#chef', label: 'Шеф' },
   { href: '#plans', label: 'Планы' },
-  { href: '#corporate', label: 'Корпоративно' },
+  { href: '#contacts', label: 'Контакты' },
   { href: '#reviews', label: 'Отзывы' }
 ]
 
@@ -45,7 +45,7 @@ export default function Nav() {
 
         <div className="flex items-center gap-6">
           <span className="hidden md:block text-[11px] tracking-luxe uppercase text-pearl/50 font-light">
-            +7 495 000 00 00
+            +7 900 169 26-59
           </span>
           <div className="relative">
             <button className="p-2 text-pearl/50 hover:text-gold transition-colors duration-300">

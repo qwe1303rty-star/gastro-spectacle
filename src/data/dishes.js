@@ -17,6 +17,8 @@ const atlantidaPoster = '/images/atlantida-poster.png'
 const bobPoster = '/images/bob-poster.png'
 const brutalnyjPoster = '/images/brutalnyj-poster.png'
 const brutalnyjVideo = '/videos/brutalnyj.mp4'
+const atlantidaVideo = '/videos/atlantida.mp4'
+const bobVideo = '/videos/bob.mp4'
 const buchoPoster = '/images/bucho-poster.png'
 const vdokhnoveniePoster = '/images/vdokhnovenie-poster.png'
 const vesennijPoster = '/images/vesennij-poster.png'
@@ -48,6 +50,74 @@ const kharchoPoster = '/images/kharcho-poster.png'
 const shhiZelenyePoster = '/images/shhi-zelenye-poster.png'
 const shhiKvashennyePoster = '/images/shhi-kvashennye-poster.png'
 
+// Горячие блюда
+const pelmeniPoster = '/images/pelmeni-poster.png'
+const makaronyFlotskiePoster = '/images/makarony-flotskie-poster.png'
+const ovoshhnoeRaguPoster = '/images/ovoshhnoe-ragu-poster.png'
+const odzhakhuriPoster = '/images/odzhakhuri-poster.png'
+const shnitselIndjejkaPoster = '/images/shnitsel-indjejka-poster.png'
+const chashushuliPoster = '/images/chashushuli-poster.png'
+const rybaMilanskiPoster = '/images/ryba-milanski-poster.png'
+const kazanKebabPoster = '/images/kazan-kebab-poster.png'
+const pastaTsyplyonokPoster = '/images/pasta-tsyplyonok-poster.png'
+const pastaMintajPoster = '/images/pasta-mintaj-poster.png'
+const kotletyPoster = '/images/kotlety-poster.png'
+const pastaBolonezePoster = '/images/pasta-boloneze-poster.png'
+const pastaKarbonaraPoster = '/images/pasta-karbonara-poster.png'
+const gulyashPoster = '/images/gulyash-poster.png'
+const mintajSmetanaPoster = '/images/mintaj-smetana-poster.png'
+const mintajTomatPoster = '/images/mintaj-tomat-poster.png'
+const kuricaZapechennayaPoster = '/images/kurica-zapechennaya-poster.png'
+const tefteliPoster = '/images/tefteli-poster.png'
+const myasoStroganovskiPoster = '/images/myaso-stroganovski-poster.png'
+const pastaKolbaskiPoster = '/images/pasta-kolbaski-poster.png'
+const krylyshkiMedPoster = '/images/krylyshki-med-poster.png'
+const gribnoeLukoshkoPoster = '/images/gribnoe-lukoshko-poster.png'
+const kartofelGribyPoster = '/images/kartofel-griby-poster.png'
+const mintajOvoshhiPoster = '/images/mintaj-ovoshhi-poster.png'
+const lenivyeGolubtsyPoster = '/images/lenivye-golubtsy-poster.png'
+const solyankaKapustaPoster = '/images/solyanka-kapusta-poster.png'
+
+// Десерты
+const keksShokoladPoster = '/images/keks-shokolad-poster.png'
+const medovikPoster = '/images/medovik-poster.png'
+
+// Завтраки
+const kashaOvsyankaPoster = '/images/kasha-ovsyanka-poster.png'
+const omletPoster = '/images/omlet-poster.png'
+const tvorochnayaZapekankaPoster = '/images/tvorochnaya-zapekanka-poster.png'
+
+// Новые салаты
+const caesarPoster = '/images/caesar-poster.png'
+
+// Новые супы
+const lapshaKurinayaPoster = '/images/lapsha-kurinaya-poster.png'
+const minestronePoster = '/images/minestrone-poster.png'
+const risovyjFrikadelkiPoster = '/images/risovyj-frikadelki-poster.png'
+const fasolevyjPoster = '/images/fasolevyj-poster.png'
+const chechevichnyjPoster = '/images/chechevichnyj-poster.png'
+const chuchvaraPoster = '/images/chuchvara-poster.png'
+const mastavaPoster = '/images/mastava-poster.png'
+
+// Новые горячие блюда
+const myasoNePoFranczuzskiPoster = '/images/myaso-ne-po-franczuzski-poster.png'
+const zharkoePoster = '/images/zharkoe-poster.png'
+const mantyPoster = '/images/manty-poster.png'
+const myasnyeEzhikiPoster = '/images/myasnye-ezhiki-poster.png'
+
+// Новые завтраки
+const kashaRisovayaPoster = '/images/kasha-risovaya-poster.png'
+const omletVetchinaPoster = '/images/omlet-vetchina-poster.png'
+const otvarnyeYajcaPoster = '/images/otvarnye-yajca-poster.png'
+const oladiPoster = '/images/oladi-poster.png'
+const syrnikiPoster = '/images/syrniki-poster.png'
+
+// Новые десерты/напитки
+const keksKlassicheskijPoster = '/images/keks-klassicheskij-poster.png'
+const blinchikiPoster = '/images/blinchiki-poster.png'
+const napitokRozaPoster = '/images/napitok-roza-poster.png'
+const kompotPoster = '/images/kompot-poster.png'
+
 export const categories = [
   'Все',
   'Салаты',
@@ -70,7 +140,7 @@ export const dishes = [
     price: null,
     description: null,
     options: null,
-    poster: atlantidaPoster, video,
+    poster: atlantidaPoster, video: atlantidaVideo,
   },
   {
     id: 'bob',
@@ -81,7 +151,7 @@ export const dishes = [
     price: null,
     description: null,
     options: null,
-    poster: bobPoster, video,
+    poster: bobPoster, video: bobVideo,
   },
   {
     id: 'brutalnyj',
@@ -281,6 +351,17 @@ export const dishes = [
     options: null,
     poster: tashkentPoster, video,
   },
+  {
+    id: 'caesar',
+    category: 'Салаты',
+    name: 'Цезарь',
+    ingredients: ['салат айсберг', 'помидоры', 'мясо курицы', 'сыр твёрдый', 'соус Цезарь', 'гренки'],
+    weight: '120 г',
+    price: null,
+    description: null,
+    options: null,
+    poster: caesarPoster, video,
+  },
 
   // ─── Супы ─────────────────────────────────────────────
   {
@@ -405,15 +486,81 @@ export const dishes = [
     poster: shhiKvashennyePoster, video,
   },
   {
-    id: 'solyanka-kapusta',
+    id: 'lapsha-kurinaya',
     category: 'Супы',
-    name: 'Солянка из капусты с сосисками',
-    ingredients: ['капуста', 'сосиски', 'морковь', 'лук', 'томатная паста', 'растительное масло'],
+    name: 'Лапша куриная',
+    ingredients: ['бульон', 'лапша', 'мясо курицы', 'картофель', 'морковь', 'лук', 'тимьян', 'укроп'],
     weight: '400 мл',
     price: null,
     description: null,
     options: null,
-    poster, video,
+    poster: lapshaKurinayaPoster, video,
+  },
+  {
+    id: 'minestrone',
+    category: 'Супы',
+    name: 'Минестроне',
+    ingredients: ['бульон', 'помидор', 'перец болгарский', 'лук', 'чеснок', 'картофель', 'морковь', 'фасоль стручковая', 'тимьян'],
+    weight: '400 мл',
+    price: null,
+    description: null,
+    options: null,
+    poster: minestronePoster, video,
+  },
+  {
+    id: 'risovyj-frikadelki',
+    category: 'Супы',
+    name: 'Рисовый с фрикадельками',
+    ingredients: ['бульон', 'фарш из мяса птицы', 'рис', 'лук', 'морковь', 'картофель', 'тимьян'],
+    weight: '400 мл',
+    price: null,
+    description: null,
+    options: null,
+    poster: risovyjFrikadelkiPoster, video,
+  },
+  {
+    id: 'fasolevyj',
+    category: 'Супы',
+    name: 'Фасолевый с курочкой',
+    ingredients: ['фасоль', 'мясо курицы', 'картофель', 'лук', 'морковь', 'томат'],
+    weight: '400 мл',
+    price: null,
+    description: null,
+    options: null,
+    poster: fasolevyjPoster, video,
+  },
+  {
+    id: 'chechevichnyj',
+    category: 'Супы',
+    name: 'Чечевичный суп',
+    ingredients: ['бульон', 'картофель', 'чечевица', 'мясо курицы', 'лук', 'морковь', 'растительное масло', 'тимьян'],
+    weight: '400 мл',
+    price: null,
+    description: null,
+    options: null,
+    poster: chechevichnyjPoster, video,
+  },
+  {
+    id: 'chuchvara',
+    category: 'Супы',
+    name: 'Чучвара',
+    ingredients: ['бульон', 'картофель', 'лук', 'морковь', 'пельмени', 'томатная паста', 'тмин', 'кориандр'],
+    weight: '400 мл',
+    price: null,
+    description: null,
+    options: null,
+    poster: chuchvaraPoster, video,
+  },
+  {
+    id: 'mastava',
+    category: 'Супы',
+    name: 'Мастава',
+    ingredients: ['бульон', 'маш', 'овощи', 'мясо птицы', 'рис', 'томат'],
+    weight: '400 мл',
+    price: null,
+    description: null,
+    options: null,
+    poster: mastavaPoster, video,
   },
 
   // ─── Горячие блюда ─────────────────────────────────────
@@ -426,7 +573,7 @@ export const dishes = [
     price: null,
     description: null,
     options: null,
-    poster, video,
+    poster: pelmeniPoster, video,
   },
   {
     id: 'makarony-flotskie',
@@ -437,7 +584,7 @@ export const dishes = [
     price: null,
     description: null,
     options: null,
-    poster, video,
+    poster: makaronyFlotskiePoster, video,
   },
   {
     id: 'ovoshhnoe-ragu',
@@ -448,7 +595,7 @@ export const dishes = [
     price: null,
     description: null,
     options: null,
-    poster, video,
+    poster: ovoshhnoeRaguPoster, video,
   },
   {
     id: 'odzhakhури',
@@ -459,7 +606,7 @@ export const dishes = [
     price: null,
     description: null,
     options: null,
-    poster, video,
+    poster: odzhakhuriPoster, video,
   },
   {
     id: 'shnitsel-indjejka',
@@ -470,7 +617,7 @@ export const dishes = [
     price: null,
     description: null,
     options: null,
-    poster, video,
+    poster: shnitselIndjejkaPoster, video,
   },
   {
     id: 'chashushuli',
@@ -481,7 +628,7 @@ export const dishes = [
     price: null,
     description: null,
     options: null,
-    poster, video,
+    poster: chashushuliPoster, video,
   },
   {
     id: 'ryba-milanski',
@@ -492,7 +639,7 @@ export const dishes = [
     price: null,
     description: null,
     options: null,
-    poster, video,
+    poster: rybaMilanskiPoster, video,
   },
   {
     id: 'kazan-kebab',
@@ -503,7 +650,7 @@ export const dishes = [
     price: null,
     description: null,
     options: null,
-    poster, video,
+    poster: kazanKebabPoster, video,
   },
   {
     id: 'pasta-tsyplyonok',
@@ -514,7 +661,7 @@ export const dishes = [
     price: null,
     description: null,
     options: null,
-    poster, video,
+    poster: pastaTsyplyonokPoster, video,
   },
   {
     id: 'pasta-mintaj',
@@ -525,7 +672,7 @@ export const dishes = [
     price: null,
     description: null,
     options: null,
-    poster, video,
+    poster: pastaMintajPoster, video,
   },
   {
     id: 'kotlety',
@@ -536,7 +683,7 @@ export const dishes = [
     price: null,
     description: null,
     options: null,
-    poster, video,
+    poster: kotletyPoster, video,
   },
   {
     id: 'pasta-boloneze',
@@ -547,7 +694,7 @@ export const dishes = [
     price: null,
     description: null,
     options: null,
-    poster, video,
+    poster: pastaBolonezePoster, video,
   },
   {
     id: 'pasta-karbonara',
@@ -558,7 +705,7 @@ export const dishes = [
     price: null,
     description: null,
     options: null,
-    poster, video,
+    poster: pastaKarbonaraPoster, video,
   },
   {
     id: 'gulyash',
@@ -569,7 +716,7 @@ export const dishes = [
     price: null,
     description: null,
     options: null,
-    poster, video,
+    poster: gulyashPoster, video,
   },
   {
     id: 'mintaj-smetana',
@@ -580,7 +727,7 @@ export const dishes = [
     price: null,
     description: null,
     options: null,
-    poster, video,
+    poster: mintajSmetanaPoster, video,
   },
   {
     id: 'mintaj-tomat',
@@ -591,7 +738,7 @@ export const dishes = [
     price: null,
     description: null,
     options: null,
-    poster, video,
+    poster: mintajTomatPoster, video,
   },
   {
     id: 'kurica-zapechennaya',
@@ -602,7 +749,7 @@ export const dishes = [
     price: null,
     description: null,
     options: null,
-    poster, video,
+    poster: kuricaZapechennayaPoster, video,
   },
   {
     id: 'tefteli',
@@ -613,7 +760,7 @@ export const dishes = [
     price: null,
     description: null,
     options: null,
-    poster, video,
+    poster: tefteliPoster, video,
   },
   {
     id: 'myaso-stroganovski',
@@ -624,7 +771,7 @@ export const dishes = [
     price: null,
     description: null,
     options: null,
-    poster, video,
+    poster: myasoStroganovskiPoster, video,
   },
   {
     id: 'pasta-kolbaski',
@@ -635,7 +782,7 @@ export const dishes = [
     price: null,
     description: null,
     options: null,
-    poster, video,
+    poster: pastaKolbaskiPoster, video,
   },
   {
     id: 'krylyshki-med',
@@ -646,7 +793,7 @@ export const dishes = [
     price: null,
     description: null,
     options: null,
-    poster, video,
+    poster: krylyshkiMedPoster, video,
   },
   {
     id: 'gribnoe-lukoshko',
@@ -657,7 +804,7 @@ export const dishes = [
     price: null,
     description: null,
     options: null,
-    poster, video,
+    poster: gribnoeLukoshkoPoster, video,
   },
   {
     id: 'kartofel-griby',
@@ -668,7 +815,7 @@ export const dishes = [
     price: null,
     description: null,
     options: null,
-    poster, video,
+    poster: kartofelGribyPoster, video,
   },
   {
     id: 'mintaj-ovoshhi',
@@ -679,7 +826,7 @@ export const dishes = [
     price: null,
     description: null,
     options: null,
-    poster, video,
+    poster: mintajOvoshhiPoster, video,
   },
   {
     id: 'lenivye-golubtsy',
@@ -690,7 +837,62 @@ export const dishes = [
     price: null,
     description: null,
     options: null,
-    poster, video,
+    poster: lenivyeGolubtsyPoster, video,
+  },
+  {
+    id: 'solyanka-kapusta',
+    category: 'Горячие блюда',
+    name: 'Солянка из капусты с сосисками',
+    ingredients: ['капуста', 'сосиски', 'морковь', 'лук', 'томатная паста', 'растительное масло'],
+    weight: '300 г',
+    price: null,
+    description: null,
+    options: null,
+    poster: solyankaKapustaPoster, video,
+  },
+  {
+    id: 'myaso-ne-po-franczuzski',
+    category: 'Горячие блюда',
+    name: 'Мясо не по-французски',
+    ingredients: ['куриное филе', 'помидор', 'сыр', 'майонез', 'шампиньоны', 'растительное масло'],
+    weight: '300 г',
+    price: null,
+    description: null,
+    options: null,
+    poster: myasoNePoFranczuzskiPoster, video,
+  },
+  {
+    id: 'zharkoe',
+    category: 'Горячие блюда',
+    name: 'Жаркое по-домашнему',
+    ingredients: ['картофель', 'мясо индейки', 'лук', 'растительное масло', 'зелень', 'сванская соль'],
+    weight: '300 г',
+    price: null,
+    description: null,
+    options: null,
+    poster: zharkoePoster, video,
+  },
+  {
+    id: 'manty',
+    category: 'Горячие блюда',
+    name: 'Манты праздничные',
+    ingredients: ['тесто', 'фарш', 'лук', 'зелень', 'сметана'],
+    weight: '300 г',
+    price: null,
+    description: null,
+    options: null,
+    poster: mantyPoster, video,
+  },
+  {
+    id: 'myasnye-ezhiki',
+    category: 'Горячие блюда',
+    name: 'Мясные ёжики',
+    ingredients: ['фарш из индейки', 'рис басмати', 'лук', 'томаты в собственном соку', 'сванская соль', 'растительное масло'],
+    weight: '300 г',
+    price: null,
+    description: null,
+    options: null,
+    poster: myasnyeEzhikiPoster, video,
   },
 
   // ─── Закуски ─────────────────────────────────────────────
@@ -699,7 +901,7 @@ export const dishes = [
     category: 'Закуски',
     name: 'Гирос',
     ingredients: ['тонкий армянский лаваш', 'морковь по-корейски', 'мясо курицы', 'картофель фри', 'помидор', 'свежие огурцы', 'сметана', 'соевый соус', 'горчица', 'красный лук'],
-    weight: '300 г',
+    weight: '350 г',
     price: null,
     description: null,
     options: null,
@@ -711,7 +913,7 @@ export const dishes = [
     category: 'Закуски',
     name: 'Бургер',
     ingredients: ['булочка для бургера', 'мясо индейки', 'помидор', 'маринованные огурцы', 'красный лук', 'чеснок', 'салат айсберг', 'сыр', 'майонез'],
-    weight: '300 г',
+    weight: '350 г',
     price: null,
     description: null,
     options: null,
@@ -723,7 +925,7 @@ export const dishes = [
     category: 'Закуски',
     name: 'Сэндвич',
     ingredients: ['чиабатта или тостовый хлеб', 'запеченная индейка или курица', 'руккола', 'свежий огурец', 'помидор', 'йогуртовый соус'],
-    weight: '300 г',
+    weight: '350 г',
     price: null,
     description: null,
     options: null,
@@ -736,23 +938,71 @@ export const dishes = [
     id: 'keks-shokolad',
     category: 'Десерты',
     name: 'Кекс шоколадный',
-    ingredients: ['яйцо', 'сливочное масло', 'сахар', 'мука', 'разрыхлитель', 'молоко', 'какао', 'сублимированные ягоды', 'сгущенное молоко'],
-    weight: '150 г',
+    ingredients: ['яйцо', 'сливочное масло', 'сахар', 'мука', 'разрыхлитель', 'молоко', 'какао', 'сублимированные ягоды', 'сгущённое молоко'],
+    weight: '100 г',
     price: null,
     description: null,
     options: null,
-    poster, video,
+    poster: keksShokoladPoster, video,
   },
   {
     id: 'medovik',
     category: 'Десерты',
     name: 'Торт «Медовик»',
     ingredients: ['мед', 'яйцо', 'сахар', 'мука', 'сливочное масло', 'сметана'],
-    weight: '150 г',
+    weight: '200 г',
     price: null,
     description: null,
     options: null,
-    poster, video,
+    poster: medovikPoster, video,
+  },
+  {
+    id: 'keks-klassicheskij',
+    category: 'Десерты',
+    name: 'Кекс классический с грецкими орехами',
+    ingredients: ['яйцо', 'сливочное масло', 'сахар', 'мука', 'разрыхлитель', 'молоко', 'грецкие орехи', 'сублимированные ягоды', 'сгущённое молоко'],
+    weight: '100 г',
+    price: 120,
+    description: null,
+    options: null,
+    poster: keksKlassicheskijPoster, video,
+  },
+  {
+    id: 'blinchiki',
+    category: 'Десерты',
+    name: 'Блинчики',
+    ingredients: ['мука', 'молоко', 'куриное яйцо', 'сахар', 'растительное масло'],
+    weight: '250 г',
+    price: 250,
+    description: null,
+    options: [
+      { label: 'С творогом и сгущённым молоком', price: 250 },
+      { label: 'С творогом и абрикосовым джемом', price: 250 },
+      { label: 'С творогом и клубничным джемом', price: 250 },
+    ],
+    poster: blinchikiPoster, video,
+  },
+  {
+    id: 'napitok-roza',
+    category: 'Десерты',
+    name: 'Напиток из суданской розы',
+    ingredients: ['вода', 'лепестки каркаде', 'сахар', 'лимонный сок'],
+    weight: '300 мл',
+    price: 40,
+    description: null,
+    options: null,
+    poster: napitokRozaPoster, video,
+  },
+  {
+    id: 'kompot',
+    category: 'Десерты',
+    name: 'Компот из сухофруктов',
+    ingredients: ['вода', 'смесь сушёных яблок', 'абрикос', 'груша', 'слива'],
+    weight: '300 мл',
+    price: 40,
+    description: null,
+    options: null,
+    poster: kompotPoster, video,
   },
 
   // ─── Завтраки ─────────────────────────────────────────────
@@ -760,12 +1010,12 @@ export const dishes = [
     id: 'kasha-ovsyanka',
     category: 'Завтраки',
     name: 'Каша овсяная',
-    ingredients: ['молоко', 'овсяные хлопья', 'сгущенное молоко', 'сахар', 'ванилин'],
-    weight: '250 г',
+    ingredients: ['молоко', 'овсяные хлопья', 'сгущённое молоко', 'сахар', 'ванилин'],
+    weight: '400 г',
     price: null,
     description: null,
     options: null,
-    poster, video,
+    poster: kashaOvsyankaPoster, video,
   },
   {
     id: 'omlet',
@@ -776,7 +1026,7 @@ export const dishes = [
     price: null,
     description: null,
     options: null,
-    poster, video,
+    poster: omletPoster, video,
   },
   {
     id: 'tvorochnaya-zapekanka',
@@ -787,7 +1037,62 @@ export const dishes = [
     price: null,
     description: null,
     options: null,
-    poster, video,
+    poster: tvorochnayaZapekankaPoster, video,
+  },
+  {
+    id: 'kasha-risovaya',
+    category: 'Завтраки',
+    name: 'Каша рисовая',
+    ingredients: ['молоко', 'рисовая крупа', 'сгущённое молоко', 'сахар', 'ванилин'],
+    weight: '400 г',
+    price: 200,
+    description: null,
+    options: null,
+    poster: kashaRisovayaPoster, video,
+  },
+  {
+    id: 'omlet-vetchina',
+    category: 'Завтраки',
+    name: 'Омлет с ветчиной и сыром',
+    ingredients: ['куриное яйцо', 'молоко', 'ветчина из говядины', 'сыр', 'специи'],
+    weight: '250 г',
+    price: 200,
+    description: null,
+    options: null,
+    poster: omletVetchinaPoster, video,
+  },
+  {
+    id: 'otvarnye-yajca',
+    category: 'Завтраки',
+    name: 'Отварные яйца с сосиской',
+    ingredients: ['куриное яйцо', 'сосиска'],
+    weight: '250 г',
+    price: 200,
+    description: null,
+    options: null,
+    poster: otvarnyeYajcaPoster, video,
+  },
+  {
+    id: 'oladi',
+    category: 'Завтраки',
+    name: 'Оладьи с топпингом',
+    ingredients: ['куриное яйцо', 'мука', 'кефир', 'сода', 'сахар'],
+    weight: '250 г',
+    price: 200,
+    description: 'Топпинги: мёд, сгущённое молоко, абрикосовый джем, клубничный джем, смородиновый джем, малиновый джем',
+    options: null,
+    poster: oladiPoster, video,
+  },
+  {
+    id: 'syrniki',
+    category: 'Завтраки',
+    name: 'Сырники с топпингом',
+    ingredients: ['творог', 'ванилин', 'гречневая мука', 'куриное яйцо', 'мука', 'сахар'],
+    weight: '200 г',
+    price: 200,
+    description: 'Топпинги: мёд, сгущённое молоко, абрикосовый джем, клубничный джем, смородиновый джем, малиновый джем',
+    options: null,
+    poster: syrnikiPoster, video,
   },
 
   // ─── Горская кухня ─────────────────────────────────────
