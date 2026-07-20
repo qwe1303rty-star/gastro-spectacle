@@ -1,9 +1,24 @@
-import { createContext, useContext, useState, useCallback } from 'react'
+import { createContext, useContext, useState, useCallback, useEffect } from 'react'
 
 const CartContext = createContext(null)
 
+const STORAGE_KEY = 'gastro-cart'
+
+function loadCart() {
+  try {
+    const raw = localStorage.getItem(STORAGE_KEY)
+    return raw ? JSON.parse(raw) : []
+  } catch (e) {
+    return []
+  }
+}
+
 export function CartProvider({ children }) {
-  const [items, setItems] = useState([])
+  const [items, setItems] = useState(loadCart)
+
+  useEffect(() => {
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(items))
+  }, [items])
 
   const addItem = useCallback((dish) => {
     setItems((prev) => {
@@ -32,10 +47,14 @@ export function CartProvider({ children }) {
     return item ? item.qty : 0
   }, [items])
 
+  const clearCart = useCallback(() => {
+    setItems([])
+  }, [])
+
   const totalItems = items.reduce((sum, i) => sum + i.qty, 0)
 
   return (
-    <CartContext.Provider value={{ items, addItem, removeItem, updateQty, getQty, totalItems }}>
+    <CartContext.Provider value={{ items, addItem, removeItem, updateQty, getQty, clearCart, totalItems }}>
       {children}
     </CartContext.Provider>
   )

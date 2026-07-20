@@ -26,6 +26,15 @@ export default {
       },
       transitionTimingFunction: {
         silk: 'cubic-bezier(0.22, 1, 0.36, 1)'
+      },
+      keyframes: {
+        slideDown: {
+          '0%': { transform: 'translateX(-50%) translateY(-100%)', opacity: '0' },
+          '100%': { transform: 'translateX(-50%) translateY(0)', opacity: '1' }
+        }
+      },
+      animation: {
+        slideDown: 'slideDown 0.4s cubic-bezier(0.22, 1, 0.36, 1)'
       }
     }
   },

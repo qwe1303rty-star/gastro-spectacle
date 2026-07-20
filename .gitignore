@@ -3,3 +3,5 @@ dist
 .DS_Store
 *.log
 .vite
+gastro-spektakl-app
+vapid-keys.json
