@@ -22,9 +22,15 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 22
-          cache: npm
+          cache: 'none'
       - run: npm ci
-      - run: npm run build
+      - name: Debug environment
+        run: |
+          node -v
+          npm -v
+          ls -la node_modules/.bin/vite*
+      - name: Build
+        run: npm run build
       - uses: actions/upload-pages-artifact@v3
         with:
           path: dist
