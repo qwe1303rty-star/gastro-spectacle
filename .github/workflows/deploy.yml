@@ -17,14 +17,15 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+      NODE_OPTIONS: '--max_old_space_size=4096'
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
           node-version: lts/*
-      - run: npm ci
-      - name: Build
-        run: npm run build
+      - run: npm ci || npm install
+      - run: node node_modules/.bin/vite build
       - name: Upload artifact
         if: success()
         uses: actions/upload-pages-artifact@v3
