@@ -11,7 +11,7 @@ export default function Hero() {
   return (
     <section id="top" ref={ref} className="relative h-screen w-full overflow-hidden">
       <motion.div style={{ scale }} className="absolute inset-0">
-        <video autoPlay muted loop playsInline className="w-full h-full object-cover" draggable={false}>
+        <video autoPlay muted loop playsInline preload="auto" className="w-full h-full object-cover" draggable={false}>
           <source src={`${import.meta.env.BASE_URL}videos/hero.mp4`} type="video/mp4" />
         </video>
       </motion.div>
