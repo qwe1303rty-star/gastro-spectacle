@@ -1,11 +1,12 @@
 import { useState, useRef, useEffect } from 'react'
 import { motion } from 'framer-motion'
 
+const B = import.meta.env.BASE_URL
 const corporateVideos = [
-  '/videos/corporate-1.mp4',
-  '/videos/corporate-2.mp4',
-  '/videos/corporate-3.mp4',
-  '/videos/corporate-4.mp4',
+  B + 'videos/corporate-1.mp4',
+  B + 'videos/corporate-2.mp4',
+  B + 'videos/corporate-3.mp4',
+  B + 'videos/corporate-4.mp4',
 ]
 
 const contacts = [

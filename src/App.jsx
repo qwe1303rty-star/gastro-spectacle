@@ -11,7 +11,7 @@ import Corporate from './components/Corporate'
 import Reviews from './components/Reviews'
 import Footer from './components/Footer'
 import CartPage from './components/CartPage'
-import PushBanner from './components/PushBanner'
+
 
 function HomePage() {
   return (
@@ -40,7 +40,6 @@ export default function App() {
           </Routes>
         </main>
         <Footer />
-        <PushBanner />
       </div>
     </CartProvider>
   )

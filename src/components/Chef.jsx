@@ -75,7 +75,7 @@ export default function Chef() {
                 playsInline
                 className='absolute inset-0 w-full h-full object-cover'
               >
-                <source src='/videos/chef.mp4' type='video/mp4' />
+                <source src={`${import.meta.env.BASE_URL}videos/chef.mp4`} type='video/mp4' />
               </motion.video>
               <div className='absolute inset-0 bg-gradient-to-t from-ink/70 via-transparent to-transparent pointer-events-none' />
               <div className='absolute bottom-6 left-6 right-6 flex items-end justify-between z-10'>
