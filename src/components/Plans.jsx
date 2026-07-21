@@ -47,7 +47,7 @@ export default function Plans() {
           className="relative overflow-hidden rounded-sm"
         >
           <img
-            src={`${import.meta.env.BASE_URL}images/plans-banner.webp`}
+            src={`${import.meta.env.BASE_URL}images/plans-banner.png`}
             alt="Планы подписки"
             className="w-full h-auto object-cover"
           />
